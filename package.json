@@ -1,0 +1,17 @@
+{
+  "name": "visionguard-ai",
+  "version": "1.0.0",
+  "description": "VisionGuard AI — Intelligent Visual Auditor for Engineering Labs",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "migrate": "npm --prefix server run migrate",
+    "seed": "npm --prefix server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

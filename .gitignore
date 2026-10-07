@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+package-lock.json
+client/package-lock.json
+server/package-lock.json
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+server/.env
+client/.env
+
+# Production Builds
+dist/
+client/dist/
+build/
+
+# Uploaded Files & User Media
+uploads/
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & OS Metadata
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Temporary installation scripts & caches
+install_node.ps1
+.cache/
+.eslintcache
